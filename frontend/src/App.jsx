@@ -17,8 +17,7 @@ const {theme} = useThemeStore()
 
 console.log(theme)
 
-const {authUser,checkAuth,isCheckingAuth} = useAuthStore()
-
+const {authUser,checkAuth,isCheckingAuth,onlineUsers} = useAuthStore()
 useEffect(()=>{
   checkAuth()
 },[checkAuth]);
